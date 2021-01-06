@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/horizontal_padding"
+        android:paddingTop="@dimen/vertical_padding"
+        android:paddingRight="@dimen/horizontal_padding"
+        android:paddingBottom="@dimen/horizontal_padding"
+        android:weightSum="10"
+        tools:context="tech.dodd.paigow.MainActivity">
+
+        <LinearLayout
+            android:id="@+id/TopLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/TopCardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/horizontal_padding"
+                android:paddingRight="@dimen/horizontal_padding"
+                android:weightSum="7"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:id="@+id/Card1Layout"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Card1text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/CD_card1"
+                        android:gravity="center"
+                        android:onClick="CardHLClick"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:textSize="@dimen/textsize_16"
+                        app:drawableTopCompat="@drawable/cardback" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Card2Layout"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Card2text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/CD_card2"
+                        android:gravity="center"
+                        android:onClick="CardHLClick"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:textSize="@dimen/textsize_16"
+                        app:drawableTopCompat="@drawable/cardback" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Card3Layout"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Card3text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/CD_card3"
+                        android:gravity="center"
+                        android:onClick="CardHLClick"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:textSize="@dimen/textsize_16"
+                        app:drawableTopCompat="@drawable/cardback" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Card4Layout"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Card4text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/CD_card4"
+                        android:gravity="center"
+                        android:onClick="CardHLClick"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:textSize="@dimen/textsize_16"
+                        app:drawableTopCompat="@drawable/cardback" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Card5Layout"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Card5text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/CD_card5"
+                        android:gravity="center"
+                        android:onClick="CardHLClick"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:textSize="@dimen/textsize_16"
+                        app:drawableTopCompat="@drawable/cardback" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Card6Layout"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Card6text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/CD_card6"
+                        android:gravity="center"
+                        android:onClick="CardHLClick"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:textSize="@dimen/textsize_16"
+                        app:drawableTopCompat="@drawable/cardback" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Card7Layout"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Card7text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/CD_card7"
+                        android:gravity="center"
+                        android:onClick="CardHLClick"
+                        android:scaleX="0.9"
+                        android:scaleY="0.9"
+                        android:textSize="@dimen/textsize_16"
+                        app:drawableTopCompat="@drawable/cardback" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize_22" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/BottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/TopButtonLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/iSolveButton"
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="Solve"
+                        android:text="@string/isolvetext" />
+
+                    <Button
+                        android:id="@+id/uSolveButton"
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="Solve"
+                        android:text="@string/usolvetext" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/NextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Draw"
+                    android:text="@string/nextbuttontext" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
