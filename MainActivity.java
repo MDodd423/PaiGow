@@ -19,7 +19,7 @@ import java.util.Collections;
 import tech.dodd.paigow.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    private Integer numHigh = 0;
+    private Integer numLow = 0;
     ArrayList<Integer> cards;
     ActivityMainBinding activityMainBinding;
 
@@ -98,17 +98,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ClickHL(TextView text) {
-        if (text.getText().equals("High")) {
+        if (text.getText().equals("Low")) {
             text.setText(null);
-            numHigh = numHigh - 1;
-        }else if(numHigh < 2){
-            text.setText(R.string.hightext);
-            numHigh = numHigh + 1;
+            numLow = numLow - 1;
+        }else if(numLow < 2){
+            text.setText(R.string.lowtext);
+            numLow = numLow + 1;
         }
     }
 
     public void DEALIT() {
-        numHigh = 0;
+        numLow = 0;
         Collections.shuffle(cards);
         assigncardvalues(cards.get(0), activityMainBinding.Card1text);
         assigncardvalues(cards.get(1), activityMainBinding.Card2text);
